@@ -1,0 +1,99 @@
+.container{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .swiper{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 450px;
+  }
+  .swiper .swiper-slide{
+    position: relative;
+    width: 495px;
+    height: 380px;
+    border-radius: 10px;
+    background: #1A1A1A;
+    transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+    overflow: hidden;
+  }
+  .swiper .swiper-slide .info{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 15px;
+  }
+  .swiper .swiper-slide-active{filter: none;}
+  .swiper .swiper-pagination-bullet-active {background-color: #EF4234 !important; width: 35px; border-radius: 50px;}
+  .swiper .swiper-pagination-bullet {background-color: #858585; transition: all .3s;}
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next{
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    background: #EF4234;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    outline: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  .swiper .swiper-button-prev::after,
+  .swiper .swiper-button-next::after {font-size: 14px;}
+  .swiper .swiper-button-prev:after{
+    position: relative;
+    left: -1px;
+  }
+  .swiper .swiper-button-next:after{
+    position: relative;
+    left: 1px;
+  }
+  .swiper .swiper-button-prev,
+  .swiper .swiper-container-rtl .swiper-button-next{
+    left: 30px;
+    right: auto;
+  }
+  .swiper .swiper-button-next,
+  .swiper .swiper-container-rtl .swiper-button-prev{
+    right: 0;
+    left: auto;
+  }
+  .swiper .swiper-button-prev.swiper-button-disabled,
+  .swiper .swiper-button-next.swiper-button-disabled{
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+  }
+  .swiper-slide{
+      display: flex !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+      padding-left: 75px !important;
+  }
+  .swiper-slide i{
+      color: #9C9C9C;
+      font-size: 16px;
+  }
+  .swiper-slide h2{
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0 15px;
+  }
+  .swiper-slide p{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 190%;
+      width: 415px;
+      margin-bottom: 20px;
+  }
+  .title{
+      margin-bottom: 60px;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+  }
